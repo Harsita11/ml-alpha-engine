@@ -20,17 +20,20 @@ An end-to-end quantitative equity strategy that engineers alpha factors from pri
 ---
 
 ## Architecture
+
+```
 Raw Price Data (Yahoo Finance)
-↓
-database.py        → SQLite schema + data ingestion
-↓
-features.py        → 12 cross-sectional alpha factors
-↓
-model.py          → LightGBM LambdaRank + walk-forward validation
-↓
-backtest.py        → dollar-neutral long-short portfolio simulation
-↓
-report.py         → performance tearsheet
+        ↓
+   database.py        → SQLite schema + data ingestion
+        ↓
+   features.py        → 12 cross-sectional alpha factors
+        ↓
+    model.py          → LightGBM LambdaRank + walk-forward validation
+        ↓
+   backtest.py        → dollar-neutral long-short portfolio simulation
+        ↓
+    report.py         → performance tearsheet
+```
 
 ---
 
